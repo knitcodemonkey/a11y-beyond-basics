@@ -14,7 +14,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "eslint-plugin-jsx-a11y": "^6.1.1",
     "normalize.css": "7.0.0",
+    "prettier": "^1.14.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "spectacle": "^5.1.0",

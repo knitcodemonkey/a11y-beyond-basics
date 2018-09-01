@@ -1,0 +1,8 @@
+<!-- Buttons interact with the current page -->
+<button type="button" onClick="clickme()">Click me</button>
+
+<!-- Links take you off the page -->
+<a href="./nextPage.html">Go to the next page</a>
+
+<!-- This is NOT accessible -->
+<div onClick="clickme()">Click me</div>
