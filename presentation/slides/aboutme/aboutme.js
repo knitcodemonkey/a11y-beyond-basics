@@ -3,25 +3,16 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 // Import Spectacle Core tags
-import {
-  Heading,
-  Slide,
-  Text,
-  Notes,
-  Layout,
-  Fill,
-  Link,
-  Image
-} from "spectacle";
+import { Heading, Slide, Text, Notes, Layout, Fill, Link, Image } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
 import styles from "../styles";
 const images = {
-  me: require("../../assets/aboutme/JenLuker.jpg"),
-  JenDevDesk: require("../../assets/aboutme/JensDesk.jpg"),
-  twitter: require("../../assets/aboutme/twitter.svg"),
-  link: require("../../assets/aboutme/Link.svg")
+  me: require("../../../assets/aboutme/JenLuker.jpg"),
+  JenDevDesk: require("../../../assets/aboutme/JensDesk.jpg"),
+  twitter: require("../../../assets/aboutme/twitter.svg"),
+  link: require("../../../assets/aboutme/Link.svg")
 };
 preloader(images);
 
@@ -55,20 +46,13 @@ export default class AboutMe extends Component {
               flexDirection: "column"
             }}
           >
-            <Heading
-              size={2}
-              textColor="dktertiary"
-              style={{ textShadow: "1px 1px 6px #222" }}
-            >
+            <Heading size={2} textColor="dktertiary" style={{ textShadow: "1px 1px 6px #222" }}>
               Jen Luker
             </Heading>
 
             <hr textfont="secondary" style={{ width: "100%" }} />
 
-            <Text
-              style={[meStyles.standardText, { fontSize: "2.9rem" }]}
-              textColor="primary"
-            >
+            <Text style={[meStyles.standardText, { fontSize: "2.9rem" }]} textColor="primary">
               Lead Software Engineer
             </Text>
 
@@ -83,11 +67,7 @@ export default class AboutMe extends Component {
                 }}
                 src={images.link}
               />
-              <Link
-                textColor="links"
-                href="https://jenluker.com"
-                style={styles.links}
-              >
+              <Link textColor="links" href="https://jenluker.com" style={styles.links}>
                 jenluker.com
               </Link>
             </Fill>
@@ -102,11 +82,7 @@ export default class AboutMe extends Component {
                 }}
                 src={images.twitter}
               />
-              <Link
-                textColor="links"
-                href="https://twitter.com/knitcodemonkey"
-                style={styles.links}
-              >
+              <Link textColor="links" href="https://twitter.com/knitcodemonkey" style={styles.links}>
                 @knitcodemonkey
               </Link>
             </Fill>
@@ -114,20 +90,10 @@ export default class AboutMe extends Component {
         </Layout>
 
         <Fill style={styles.spacePlease}>
-          <Text
-            textColor="primary"
-            style={[
-              styles.smallText,
-              { display: "inline-block", marginRight: 10 }
-            ]}
-          >
+          <Text textColor="primary" style={[styles.smallText, { display: "inline-block", marginRight: 10 }]}>
             Follow along with the slides:
           </Text>
-          <Link
-            textColor="links"
-            style={styles.links}
-            href={this.props.slideUrl}
-          >
+          <Link textColor="links" style={styles.links} href={this.props.slideUrl}>
             {this.props.slideUrl}
           </Link>
         </Fill>

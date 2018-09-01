@@ -3,24 +3,7 @@ import React from "react";
 import DeckWrapper from "./deck-wrapper";
 
 import { AboutMe, Formidable } from "./slides/aboutme";
-import {
-  A11yIntro,
-  WhatIsA11y,
-  WhatIsDisability,
-  TypesOfDisability,
-  Why,
-  WhyBusiness1,
-  WhyBusiness2,
-  WhyBusiness3
-} from "./slides/aboutA11y";
-import { GettingStartedIntro, Axe, DesignTools, DevTools } from "./slides/gettingStarted";
-import { BreakdownIntro, Checklists, StartNow, ByComponent, ByPage } from "./slides/breakdown";
-import {
-  RealWorldApplication,
-  ButtonLinkDiv,
-  DesignAffectsCodeCheckbox,
-  DesignAffectsCodeMultiselect
-} from "./slides/a11yDecisions";
+
 // Import Spectacle Core tags
 import { Deck, Fill, Heading, Layout, Link, Notes, Slide, Text } from "spectacle";
 
@@ -64,7 +47,7 @@ export default class Presentation extends React.Component {
         topContent={<span style={{ color: "white" }}>Top</span>}
         bottomContent={<span style={{ color: "white" }}>Bottom</span>}
       >
-        <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+        <Deck transition={["slide"]} transitionDuration={500} theme={theme}>
           {/* Title Screen */}
           <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.7}>
             <Notes>
@@ -100,38 +83,6 @@ export default class Presentation extends React.Component {
           {/* About Me Slides */}
           <AboutMe slideUrl={slideUrl} />
           <Formidable />
-
-          {/* 5 W's of Accessibility */}
-          <A11yIntro />
-          <WhatIsA11y />
-          <WhatIsDisability />
-          <TypesOfDisability />
-          <Why />
-          <WhyBusiness1 />
-          <WhyBusiness2 />
-          <WhyBusiness3 />
-
-          {/* How do we get started? */}
-          <GettingStartedIntro />
-          <Axe />
-          <DesignTools />
-          <DevTools />
-
-          {/* Test Your Site */}
-          <TestYourSiteIntro />
-
-          {/* That seems like a lot. How do we break it down? */}
-          <BreakdownIntro />
-          <Checklists />
-          <StartNow />
-          <ByComponent />
-          <ByPage />
-
-          {/* How design affects code affects accessibility */}
-          <RealWorldApplication />
-          <ButtonLinkDiv />
-          <DesignAffectsCodeCheckbox />
-          <DesignAffectsCodeMultiselect />
 
           {/* Conclusion */}
           <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>

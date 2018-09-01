@@ -11,10 +11,10 @@ import preloader from "spectacle/lib/utils/preloader";
 // Require CSS
 require("normalize.css");
 const images = {
-  formidable: require("../../assets/aboutme/formidable-logo.svg"),
-  formidableHero: require("../../assets/aboutme/formidableHero.jpg"),
-  twitter: require("../../assets/aboutme/twitter.svg"),
-  link: require("../../assets/aboutme/Link.svg")
+  formidable: require("../../../assets/aboutme/formidable-logo.svg"),
+  formidableHero: require("../../../assets/aboutme/formidableHero.jpg"),
+  twitter: require("../../../assets/aboutme/twitter.svg"),
+  link: require("../../../assets/aboutme/Link.svg")
 };
 preloader(images);
 
