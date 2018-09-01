@@ -1,19 +1,20 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
 const DeckWrapper = ({ topContent, bottomContent, children }) => {
   const contentPositionStyles = {
     position: "absolute",
-    padding: "5px",
-    zIndex: 999999
+    padding: "5px 8px",
+    zIndex: 999999,
+    fontSize: "1.4rem"
   };
 
   return (
-    <div>
+    <Fragment>
       <div style={{ ...contentPositionStyles, top: 0 }}>{topContent}</div>
       {children}
-      <div style={{ ...contentPositionStyles, bottom: 0 }}>{bottomContent}</div>
-    </div>
+      <div style={{ ...contentPositionStyles, bottom: 0, right: 0 }}>{bottomContent}</div>
+    </Fragment>
   );
 };
 

@@ -44,8 +44,8 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <DeckWrapper
-        topContent={<span style={{ color: "white" }}>Top</span>}
-        bottomContent={<span style={{ color: "white" }}>Bottom</span>}
+        topContent={<span style={{ color: themeColors.faded }}>{slideUrl}</span>}
+        bottomContent={<span style={{ color: themeColors.faded }}>@knitcodemonkey</span>}
       >
         <Deck transition={["slide"]} transitionDuration={500} theme={theme}>
           {/* Title Screen */}
