@@ -1,6 +1,6 @@
 // Import React
 import React from "react";
-import { Appear, Heading, Slide, Text, Notes } from "spectacle";
+import { Appear, Slide, Text, Notes } from "spectacle";
 import preloader from "spectacle/lib/utils/preloader";
 import styles from "../styles";
 require("normalize.css");
@@ -13,20 +13,21 @@ export default class Checklists extends React.Component {
   render() {
     return (
       <Slide bgImage={images.brickBg} bgDarken={0.7}>
+        <Notes />
         <Appear>
-          <Text>Definition of Done</Text>
+          <Text style={styles.smallText}>Definition of Done</Text>
         </Appear>
 
         <Appear>
-          <Text>Reusable components</Text>
+          <Text style={styles.smallText}>Reusable components</Text>
         </Appear>
 
         <Appear>
-          <Text>Individual pages</Text>
+          <Text style={styles.smallText}>Individual pages</Text>
         </Appear>
 
         <Appear>
-          <Text>Content and Flow</Text>
+          <Text style={styles.smallText}>Content and Flow</Text>
         </Appear>
       </Slide>
     );
