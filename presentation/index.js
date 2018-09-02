@@ -1,26 +1,20 @@
-// Import React
 import React from "react";
 import DeckWrapper from "./deck-wrapper";
-
-import { AboutMe, Formidable } from "./slides/aboutme";
-
-// Import Spectacle Core tags
 import { Deck, Fill, Heading, Layout, Link, Notes, Slide, Text } from "spectacle";
-
-// Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
-
-// Import theme
 import createTheme from "spectacle/lib/themes/default";
 import styles from "./slides/styles";
+import { AboutMe, Formidable } from "./slides/aboutme";
+import { A11yIntro } from "./slides/shortA11yIntro";
+require("normalize.css");
+
+const slideUrl = "https://be-a-react-native-a11y.surge.sh";
+
 const images = {
   JenDevDesk: require("../assets/aboutme/JensDesk.jpg"),
   JenDeskColor: require("../assets/aboutme/JensDeskColor.jpg")
 };
 preloader(images);
-
-// Require CSS
-require("normalize.css");
 
 const themeColors = {
   primary: "#fff",
@@ -33,12 +27,9 @@ const themeColors = {
   faded: "#bbb",
   background: "linear-gradient(#F8FAFA, #D8DADA)"
 };
-
 const theme = createTheme(themeColors, {
   primary: "Raleway"
 });
-
-const slideUrl = "https://be-a-react-native-a11y.surge.sh";
 
 export default class Presentation extends React.Component {
   render() {
@@ -52,7 +43,7 @@ export default class Presentation extends React.Component {
           <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.7}>
             <Notes>
               As speakers, we do our best, but sometimes slides are just too difficult to read. You can follow along at
-              a11y-sprint-filler.surge.sh
+              a11y-beyond-basics.surge.sh
             </Notes>
             <Layout style={styles.flexCol}>
               <Fill style={styles.spacePlease}>
@@ -66,7 +57,7 @@ export default class Presentation extends React.Component {
                   bold
                   style={{ textShadow: "1px 1px" + " 6px #111" }}
                 >
-                  the sprint-filler way
+                  Beyond the Basics
                 </Heading>
               </Fill>
               <Fill style={styles.littleSpacePlease}>
@@ -83,6 +74,9 @@ export default class Presentation extends React.Component {
           {/* About Me Slides */}
           <AboutMe slideUrl={slideUrl} />
           <Formidable />
+
+          {/* short a11y intro */}
+          <A11yIntro />
 
           {/* Conclusion */}
           <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>
