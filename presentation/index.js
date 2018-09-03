@@ -20,10 +20,12 @@ import {
 
 import { Aria } from "./slides/intermediateA11y";
 
+import { GettingStartedIntro, Axe, DesignTools, DevTools } from "./slides/gettingStarted";
+
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
 require("normalize.css");
 
-const slideUrl = "https://be-a-react-native-a11y.surge.sh";
+const slideUrl = "https://a11y-beyond-basics.surge.sh";
 
 const images = {
   JenDevDesk: require("../assets/aboutme/JensDesk.jpg"),
@@ -78,6 +80,12 @@ export default class Presentation extends React.Component {
           <WhyBusiness1 />
           <WhyBusiness2 />
           <WhyBusiness3 />
+
+          {/* How do we get started? */}
+          <GettingStartedIntro />
+          <Axe />
+          <DesignTools />
+          <DevTools />
 
           {/* Conclusion */}
           <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>
