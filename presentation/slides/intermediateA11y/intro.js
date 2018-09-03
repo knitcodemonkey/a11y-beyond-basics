@@ -17,24 +17,12 @@ export default class A11yIntro extends React.Component {
   render() {
     return (
       <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>
-        <Heading
-          textColor="quartenary"
-          style={{
-            marginBottom: -100,
-            zIndex: 10,
-            position: "relative"
-          }}
-        >
+        <Heading textColor="quartenary" style={{ marginBottom: -100, zIndex: 10, position: "relative" }}>
           Accessibility
         </Heading>
         <Image
           src={images.accessibilityGif}
-          style={{
-            width: "100%",
-            marginBottom: -90,
-            zIndex: 0,
-            position: "relative"
-          }}
+          style={{ width: "100%", marginBottom: -90, zIndex: 0, position: "relative" }}
         />
         <Link
           textColor="links"

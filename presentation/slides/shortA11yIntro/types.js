@@ -30,24 +30,24 @@ export default class TypesOfDisability extends React.Component {
 
         <Layout>
           <Fill>
-            <Text textColor="primary" style={[styles.largeText, styles.littleSpacePlease]}>
+            <Text textColor="primary" style={[styles.standardText, styles.littleSpacePlease]}>
               Visual
             </Text>
-            <Text textColor="primary" style={[styles.largeText, styles.littleSpacePlease]}>
+            <Text textColor="primary" style={[styles.standardText, styles.littleSpacePlease]}>
               Auditory
             </Text>
-            <Text textColor="primary" style={[styles.largeText, styles.littleSpacePlease]}>
+            <Text textColor="primary" style={[styles.standardText, styles.littleSpacePlease]}>
               Physical
             </Text>
           </Fill>
           <Fill>
-            <Text textColor="primary" style={[styles.largeText, styles.littleSpacePlease]}>
+            <Text textColor="primary" style={[styles.standardText, styles.littleSpacePlease]}>
               Speech
             </Text>
-            <Text textColor="primary" style={[styles.largeText, styles.littleSpacePlease]}>
+            <Text textColor="primary" style={[styles.standardText, styles.littleSpacePlease]}>
               Cognitive
             </Text>
-            <Text textColor="primary" style={[styles.largeText, styles.littleSpacePlease]}>
+            <Text textColor="primary" style={[styles.standardText, styles.littleSpacePlease]}>
               Neurological
             </Text>
           </Fill>

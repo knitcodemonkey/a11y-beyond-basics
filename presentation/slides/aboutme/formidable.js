@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../styles";
 
 // Import Spectacle Core tags
-import { Heading, Slide, Text, Link, Image, Fill } from "spectacle";
+import { Heading, Slide, Text, Link, Image, Layout, Fill } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -37,43 +37,54 @@ export default class AboutMe extends React.Component {
           React Native, GraphQL, Node.js, and the extended JavaScript ecosystem.
         </Text>
 
-        <Fill style={{ flex: 1, flexDirection: "row" }}>
-          <Image
-            style={{
-              display: "inline",
-              width: "1.4rem",
-              height: "1.4rem",
-              margin: "0 5px"
-            }}
-            src={images.link}
-          />
-          <Link
-            textColor="links"
-            style={[{ zIndex: 10, position: "relative", textDecoration: "underline" }, styles.smallText]}
-            href="https://formidable.com"
-          >
-            Formidable.com
-          </Link>
-          <Text style={{ display: "inline", padding: "0 5px" }} textColor="links">
-            |
-          </Text>
-          <Image
-            style={{
-              display: "inline",
-              width: "1.5rem",
-              height: "1.5rem",
-              margin: "0 5px"
-            }}
-            src={images.twitter}
-          />
-          <Link
-            textColor="links"
-            style={[{ zIndex: 10, position: "relative", textDecoration: "underline" }, styles.smallText]}
-            href="https://twitter.com/FormidableLabs"
-          >
-            @FormidableLabs
-          </Link>
-        </Fill>
+        <Layout
+          style={[
+            styles.verticalAlignment,
+            { flexDirection: "row", maxWidth: "450px", margin: "0 auto", flexWrap: "wrap" }
+          ]}
+        >
+          <Fill style={styles.verticalAlignment}>
+            <Image
+              style={{
+                display: "inline",
+                width: "1.4rem",
+                height: "1.4rem",
+                margin: "0 5px"
+              }}
+              src={images.link}
+            />
+            <Link
+              textColor="links"
+              style={[{ zIndex: 10, position: "relative", textDecoration: "underline" }, styles.links]}
+              href="https://formidable.com"
+            >
+              Formidable.com
+            </Link>
+          </Fill>
+          <Fill>
+            <Text textColor="faded" style={{ padding: 0, margin: "0 15px 0 20px" }}>
+              |
+            </Text>
+          </Fill>
+          <Fill style={styles.verticalAlignment}>
+            <Image
+              style={{
+                display: "inline",
+                width: "1.4rem",
+                height: "1.4rem",
+                margin: "0 5px"
+              }}
+              src={images.twitter}
+            />
+            <Link
+              textColor="links"
+              style={[{ zIndex: 10, position: "relative", textDecoration: "underline", margin: "0 5px" }, styles.links]}
+              href="https://twitter.com/FormidableLabs"
+            >
+              FormidableLabs
+            </Link>
+          </Fill>
+        </Layout>
       </Slide>
     );
   }

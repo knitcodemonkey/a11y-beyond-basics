@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import Spectacle Core tags
-import { Heading, Slide, Text, Notes } from "spectacle";
+import { Heading, Slide, Text, Notes, Layout, Fill } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -28,21 +28,29 @@ export default class TypesOfDisability extends React.Component {
 
         <hr textfont="secondary" style={{ width: "100%" }} />
 
-        <Text textColor="primary" style={[styles.averageText, styles.tinySpacePlease]}>
-          Screen Readers
-        </Text>
-        <Text textColor="primary" style={[styles.averageText, styles.tinySpacePlease]}>
-          Keyboard Navigation
-        </Text>
-        <Text textColor="primary" style={[styles.averageText, styles.tinySpacePlease]}>
-          Network Connection Limitations
-        </Text>
-        <Text textColor="primary" style={[styles.averageText, styles.tinySpacePlease]}>
-          Language Complexity
-        </Text>
-        <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
-          Globalization/Internationalization
-        </Text>
+        <Layout style={[styles.horizontalAlignment, { flexDirection: "column" }]}>
+          <Fill style={styles.verticalAlignment}>
+            <Text textColor="primary" style={[styles.averageText, styles.half, styles.littleSpacePlease]}>
+              Screen Readers
+            </Text>
+            <Text textColor="primary" style={[styles.averageText, styles.half, styles.littleSpacePlease]}>
+              Keyboard Navigation
+            </Text>
+          </Fill>
+          <Fill style={[styles.horizontalAlignment, styles.littleSpacePlease]}>
+            <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
+              Network Connection Limitations
+            </Text>
+          </Fill>
+          <Fill style={styles.verticalAlignment}>
+            <Text textColor="primary" style={[styles.averageText, styles.half, styles.littleSpacePlease]}>
+              Language Complexity
+            </Text>
+            <Text textColor="primary" style={[styles.averageText, styles.half, styles.littleSpacePlease]}>
+              Internationalization
+            </Text>
+          </Fill>
+        </Layout>
       </Slide>
     );
   }

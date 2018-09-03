@@ -35,7 +35,7 @@ const Styles = {
     textShadow: "1px 1px 6px #111"
   },
   standardText: {
-    fontSize: "3rem",
+    fontSize: "2.9rem",
     lineHeight: "3.4rem",
     textShadow: "1px 1px 6px #111"
   },
@@ -60,14 +60,29 @@ const Styles = {
   },
   verticalAlignment: {
     display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
+    alignItems: "center"
+  },
+  horizontalAlignment: {
+    display: "flex",
+    alignItems: "space-around",
+    justifyContent: "space-around"
   },
   icons: {
     display: "inline",
     width: "1.6rem",
     height: "1.6rem",
     margin: "0 10px 0 0"
+  },
+  links: {
+    zIndex: 10,
+    fontSize: "1.6rem",
+    lineHeight: "2.0rem",
+    textShadow: "1px 1px 4px #111",
+    textDecoration: "underline"
+  },
+  half: {
+    width: "50%",
+    display: "inline"
   }
 };
 

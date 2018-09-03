@@ -43,11 +43,11 @@ export default class What extends React.Component {
           because of their body’s limitations, rather the defect occurred in the technology."
         </Text>
         <Link
-          textColor="dktertiary"
-          style={[styles.smallText, { textAlign: "center", width: "100%" }]}
+          textColor="links"
+          style={[{ textAlign: "center", width: "100%" }, styles.links]}
           href="https://accessibility.princeton.edu/blogs/applying-social-model-disability-web-accessibility"
         >
-          ~ Damian Sian, ICT Accessibility
+          Damian Sian, ICT Accessibility
         </Link>
       </Slide>
     );
