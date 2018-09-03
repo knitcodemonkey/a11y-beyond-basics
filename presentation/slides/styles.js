@@ -1,5 +1,11 @@
-
 const Styles = {
+  hr: {
+    width: "100%",
+    color: "#666",
+    backgroundColor: "#666",
+    border: "none",
+    height: 2
+  },
   li: {
     margin: "40px 0 0 0",
     lineHeight: "2em"
@@ -17,28 +23,31 @@ const Styles = {
   spacePlease: {
     padding: "60px 0"
   },
+  tinySpacePlease: {
+    padding: "10px 0"
+  },
   littleSpacePlease: {
     padding: "20px 0"
   },
   largeText: {
     fontSize: "4rem",
     lineHeight: "4.4rem",
-    textShadow: "1px 1px" + " 6px #111"
+    textShadow: "1px 1px 6px #111"
   },
   standardText: {
     fontSize: "3rem",
     lineHeight: "3.4rem",
-    textShadow: "1px 1px" + " 6px #111"
+    textShadow: "1px 1px 6px #111"
   },
   extraSmallText: {
     fontSize: "1.2rem",
     lineHeight: "1.6rem",
-    textShadow: "1px 1px" + " 4px #111"
+    textShadow: "1px 1px 4px #111"
   },
   smallText: {
     fontSize: "2rem",
     lineHeight: "2.4rem",
-    textShadow: "1px 1px" + " 4px #111"
+    textShadow: "1px 1px 4px #111"
   },
   bulletLinks: {
     lineHeight: "1.6em",
@@ -48,6 +57,17 @@ const Styles = {
     fontSize: "1.2em",
     lineHeight: "1.2em",
     padding: "12px 0px"
+  },
+  verticalAlignment: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  icons: {
+    display: "inline",
+    width: "1.6rem",
+    height: "1.6rem",
+    margin: "0 10px 0 0"
   }
 };
 

@@ -4,8 +4,19 @@ import { Deck, Fill, Heading, Layout, Link, Notes, Slide, Text } from "spectacle
 import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
 import styles from "./slides/styles";
+
 import { AboutMe, Formidable } from "./slides/aboutme";
-import { A11yIntro } from "./slides/shortA11yIntro";
+import {
+  A11yIntro,
+  WhatIsDisability,
+  TypesOfDisability,
+  DurationOfDisability,
+  WhatIsA11y,
+  PartsOfA11y,
+  WhyBusiness1,
+  WhyBusiness2,
+  WhyBusiness3
+} from "./slides/shortA11yIntro";
 require("normalize.css");
 
 const slideUrl = "https://be-a-react-native-a11y.surge.sh";
@@ -38,7 +49,7 @@ export default class Presentation extends React.Component {
         topContent={<span style={{ color: themeColors.faded }}>{slideUrl}</span>}
         bottomContent={<span style={{ color: themeColors.faded }}>@knitcodemonkey</span>}
       >
-        <Deck transition={["slide"]} transitionDuration={500} theme={theme}>
+        <Deck theme={theme} progress="pacman">
           {/* Title Screen */}
           <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.7}>
             <Notes>
@@ -77,6 +88,17 @@ export default class Presentation extends React.Component {
 
           {/* short a11y intro */}
           <A11yIntro />
+
+          <WhatIsDisability />
+          <TypesOfDisability />
+          <DurationOfDisability />
+
+          <WhatIsA11y />
+          <PartsOfA11y />
+
+          <WhyBusiness1 />
+          <WhyBusiness2 />
+          <WhyBusiness3 />
 
           {/* Conclusion */}
           <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>

@@ -12,6 +12,7 @@ const images = {
   me: require("../../../assets/aboutme/JenLuker.jpg"),
   JenDevDesk: require("../../../assets/aboutme/JensDesk.jpg"),
   twitter: require("../../../assets/aboutme/twitter.svg"),
+  podcast: require("../../../assets/aboutme/podcast.svg"),
   link: require("../../../assets/aboutme/Link.svg")
 };
 preloader(images);
@@ -50,40 +51,32 @@ export default class AboutMe extends Component {
               Jen Luker
             </Heading>
 
-            <hr textfont="secondary" style={{ width: "100%" }} />
-
-            <Text style={[meStyles.standardText, { fontSize: "2.9rem" }]} textColor="primary">
-              Lead Software Engineer
+            <hr style={styles.hr} />
+            <Text
+              style={[meStyles.standardText, { fontSize: "2.6rem", lineHeight: "2.0rem", padding: 0, margin: 0 }]}
+              textColor="primary"
+            >
+              Software Engineer
             </Text>
+            <hr style={styles.hr} />
 
-            <hr textfont="secondary" style={{ width: "100%" }} />
-            <Fill>
-              <Image
-                style={{
-                  display: "inline",
-                  width: "1.5rem",
-                  height: "1.5rem",
-                  margin: "0 5px"
-                }}
-                src={images.link}
-              />
+            <Fill style={styles.verticalAlignment}>
+              <Image style={styles.icons} src={images.link} />
               <Link textColor="links" href="https://jenluker.com" style={styles.links}>
                 jenluker.com
               </Link>
             </Fill>
 
-            <Fill>
-              <Image
-                style={{
-                  display: "inline",
-                  width: "1.5rem",
-                  height: "1.5rem",
-                  margin: "0 5px"
-                }}
-                src={images.twitter}
-              />
+            <Fill style={styles.verticalAlignment}>
+              <Image style={styles.icons} src={images.twitter} />
               <Link textColor="links" href="https://twitter.com/knitcodemonkey" style={styles.links}>
-                @knitcodemonkey
+                knitcodemonkey
+              </Link>
+            </Fill>
+            <Fill style={styles.verticalAlignment}>
+              <Image style={styles.icons} src={images.podcast} />
+              <Link textColor="links" href="https://twitter.com/bookbytesFM" style={styles.links}>
+                bookbytesFM
               </Link>
             </Fill>
           </Fill>

@@ -29,17 +29,16 @@ export default class What extends React.Component {
         </Heading>
 
         <hr textfont="secondary" style={{ width: "100%" }} />
-
-        <Text textColor="primary" style={styles.spacePlease}>
-          People with disabilities can perceive, understand, navigate, and interact with websites and tools, and they
-          can contribute equally without barriers.
+        <Text textColor="primary" style={styles.littleSpacePlease}>
+          “Accessibility ensures people with disabilities can access the same information from a system as everyone
+          else, and also gain the same benefits”
         </Text>
         <Link
           textColor="dktertiary"
           style={[styles.smallText, { textAlign: "center", width: "100%" }]}
-          href="https://www.w3.org/WAI/intro/usable"
+          href="https://webdesign.tutsplus.com/articles/accessibility-basics-designing-for-visual-impairment--cms-27634"
         >
-          ~ W3C - Web Accessibility Initiative
+          ~ Graeme Fulton
         </Link>
       </Slide>
     );
