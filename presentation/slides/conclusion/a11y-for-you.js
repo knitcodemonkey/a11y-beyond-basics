@@ -1,0 +1,20 @@
+// Import React
+import React from "react";
+import { Heading, Slide, Notes } from "spectacle";
+import preloader from "spectacle/lib/utils/preloader";
+require("normalize.css");
+const images = {
+  Library: require("../../../assets/documentation/library-at-trinity-college.jpg")
+};
+preloader(images);
+
+const A11yForYou = () => (
+  <Slide fit bgImage={images.Library} bgDarken={0.7}>
+    <Notes />
+    <Heading textColor="primary" style={{ lineHeight: "1.2em" }}>
+      What if you wrote documentation for your past self?
+    </Heading>
+  </Slide>
+);
+
+export default A11yForYou;

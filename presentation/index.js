@@ -24,14 +24,14 @@ import { GettingStartedIntro, Axe, DesignTools, DevTools } from "./slides/gettin
 
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
 
-import { DocumentationQuote, PastSelf } from "./slides/documentation";
+import { DocQuote1, PastSelf, DevEvo1, DevEvo2, AccessibleExamples, DocQuote2 } from "./slides/documentation";
+import {A11yForYou, BeKind } from "./slides/conclusion";
 require("normalize.css");
 
 const slideUrl = "https://a11y-beyond-basics.surge.sh";
 
 const images = {
-  JenDevDesk: require("../assets/aboutme/JensDesk.jpg"),
-  JenDeskColor: require("../assets/aboutme/JensDeskColor.jpg")
+  JenDevDesk: require("../assets/aboutme/JensDesk.jpg")
 };
 preloader(images);
 
@@ -59,6 +59,11 @@ export default class Presentation extends React.Component {
       >
         <Deck theme={theme} progress="pacman">
           <Cover slideUrl={slideUrl} />
+
+          {/* About Me Slides */}
+          <AboutMe slideUrl={slideUrl} />
+          <Formidable />
+
           <Dedication />
 
           {/* short a11y intro */}
@@ -89,22 +94,16 @@ export default class Presentation extends React.Component {
           <DesignTools />
           <DevTools />
 
-          <DocumentationQuote />
+          <DocQuote1 />
           <PastSelf />
+          <DevEvo1 />
+          <DevEvo2 />
+          <AccessibleExamples />
+          <DocQuote2 />
 
-          {/* Conclusion */}
-          <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>
-            <Text textColor="dktertiary" style={[styles.largeText, styles.littleSpacePlease]}>
-              Accessibility isn't for just a select few. It's for everybody. It's for you.
-            </Text>
-            <Heading size={2} textColor="primary" style={styles.littleSpacePlease}>
-              Thank you
-            </Heading>
-          </Slide>
+          <A11yForYou />
+          <BeKind />
 
-          {/* About Me Slides */}
-          <AboutMe slideUrl={slideUrl} />
-          <Formidable />
         </Deck>
       </DeckWrapper>
     );
