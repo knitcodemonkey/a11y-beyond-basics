@@ -62,39 +62,30 @@ export default class AboutMe extends Component {
 
             <Fill style={styles.verticalAlignment}>
               <Image style={styles.icons} src={images.link} />
-              <Link textColor="links" href="https://jenluker.com" style={styles.links}>
+              <Link textColor="links" href="https://jenluker.com" style={[styles.links, styles.smallText]}>
                 jenluker.com
               </Link>
             </Fill>
 
             <Fill style={styles.verticalAlignment}>
               <Image style={styles.icons} src={images.twitter} />
-              <Link textColor="links" href="https://twitter.com/knitcodemonkey" style={styles.links}>
+              <Link
+                textColor="links"
+                href="https://twitter.com/knitcodemonkey"
+                style={[styles.links, styles.smallText]}
+              >
                 knitcodemonkey
               </Link>
             </Fill>
             <Fill style={styles.verticalAlignment}>
               <Image style={styles.icons} src={images.podcast} />
-              <Link textColor="links" href="https://twitter.com/bookbytesFM" style={styles.links}>
+              <Link textColor="links" href="https://twitter.com/bookbytesFM" style={[styles.links, styles.smallText]}>
                 bookbytesFM
               </Link>
             </Fill>
           </Fill>
         </Layout>
-
-        <Fill style={styles.spacePlease}>
-          <Text textColor="primary" style={[styles.smallText, { display: "inline-block", marginRight: 10 }]}>
-            Follow along with the slides:
-          </Text>
-          <Link textColor="links" style={styles.links} href={this.props.slideUrl}>
-            {this.props.slideUrl}
-          </Link>
-        </Fill>
       </Slide>
     );
   }
 }
-
-AboutMe.propTypes = {
-  slideUrl: PropTypes.string
-};

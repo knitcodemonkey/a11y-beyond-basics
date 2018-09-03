@@ -30,15 +30,15 @@ export default class TypesOfDisability extends React.Component {
 
         <Layout style={[styles.horizontalAlignment, { flexDirection: "column" }]}>
           <Fill style={styles.verticalAlignment}>
-            <Text textColor="primary" style={[styles.averageText, styles.half, styles.littleSpacePlease]}>
+            <Text textColor="faded" style={[styles.averageText, styles.half, styles.littleSpacePlease]}>
               Screen Readers
             </Text>
-            <Text textColor="primary" style={[styles.averageText, styles.half, styles.littleSpacePlease]}>
+            <Text textColor="faded" style={[styles.averageText, styles.half, styles.littleSpacePlease]}>
               Keyboard Navigation
             </Text>
           </Fill>
           <Fill style={[styles.horizontalAlignment, styles.littleSpacePlease]}>
-            <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
+            <Text textColor="faded" style={[styles.averageText, styles.littleSpacePlease]}>
               Network Connection Limitations
             </Text>
           </Fill>

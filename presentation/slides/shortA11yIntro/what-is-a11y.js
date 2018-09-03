@@ -34,8 +34,8 @@ export default class What extends React.Component {
           else, and also gain the same benefits”
         </Text>
         <Link
-          textColor="dktertiary"
-          style={[styles.smallText, { textAlign: "center", width: "100%" }]}
+          textColor="links"
+          style={[styles.links, { textAlign: "center", width: "100%" }]}
           href="https://webdesign.tutsplus.com/articles/accessibility-basics-designing-for-visual-impairment--cms-27634"
         >
           ~ Graeme Fulton

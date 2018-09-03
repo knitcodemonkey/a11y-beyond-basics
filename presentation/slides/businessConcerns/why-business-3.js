@@ -30,8 +30,8 @@ export default class WhyBusiness extends React.Component {
         </Text>
 
         <Link
-          textColor="dktertiary"
-          style={[styles.smallText, { textAlign: "center", width: "100%" }]}
+          textColor="links"
+          style={[styles.links, { textAlign: "center", width: "100%" }]}
           href="https://blog.prototypr.io/why-i-wont-try-on-disability-to-build-empathy-in-the-design-process-and-you-should-think-twice-7086ed6202aa"
         >
           ~ Amelia Abreu

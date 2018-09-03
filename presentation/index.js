@@ -4,19 +4,21 @@ import { Deck, Fill, Heading, Layout, Link, Notes, Slide, Text } from "spectacle
 import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
 import styles from "./slides/styles";
-
+import { Cover, Dedication } from "./slides/intro";
 import { AboutMe, Formidable } from "./slides/aboutme";
 import {
   A11yIntro,
   WhatIsDisability,
   TypesOfDisability,
-  DurationOfDisability,
+  TypesOfDisability2,
+  DiversityOfDisability,
+  DiversityOfDisability2,
   WhatIsA11y,
   PartsOfA11y,
-  WhyBusiness1,
-  WhyBusiness2,
-  WhyBusiness3
+  PartsOfA11y2
 } from "./slides/shortA11yIntro";
+
+import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
 require("normalize.css");
 
 const slideUrl = "https://be-a-react-native-a11y.surge.sh";
@@ -35,7 +37,7 @@ const themeColors = {
   links: "deepskyblue",
   dktertiary: "#FF4E33",
   quartenary: "#FAFAFA",
-  faded: "#bbb",
+  faded: "#999",
   background: "linear-gradient(#F8FAFA, #D8DADA)"
 };
 const theme = createTheme(themeColors, {
@@ -50,52 +52,25 @@ export default class Presentation extends React.Component {
         bottomContent={<span style={{ color: themeColors.faded }}>@knitcodemonkey</span>}
       >
         <Deck theme={theme} progress="pacman">
-          {/* Title Screen */}
-          <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.7}>
-            <Notes>
-              As speakers, we do our best, but sometimes slides are just too difficult to read. You can follow along at
-              a11y-beyond-basics.surge.sh
-            </Notes>
-            <Layout style={styles.flexCol}>
-              <Fill style={styles.spacePlease}>
-                <Heading caps size={1} textColor="primary" style={{ textShadow: "1px 1px" + " 6px #111" }}>
-                  Accessibility
-                </Heading>
-                <Heading
-                  margin="10px 0 0"
-                  textColor="dktertiary"
-                  size={3}
-                  bold
-                  style={{ textShadow: "1px 1px" + " 6px #111" }}
-                >
-                  Beyond the Basics
-                </Heading>
-              </Fill>
-              <Fill style={styles.littleSpacePlease}>
-                <Text textColor="primary" style={[styles.smallText, { display: "inline-block", marginRight: 10 }]}>
-                  Follow along with the slides:
-                </Text>
-                <Link textColor="links" style={styles.links} href={slideUrl}>
-                  {slideUrl}
-                </Link>
-              </Fill>
-            </Layout>
-          </Slide>
-
-          {/* About Me Slides */}
-          <AboutMe slideUrl={slideUrl} />
-          <Formidable />
+          <Cover slideUrl={slideUrl} />
+          <Dedication />
 
           {/* short a11y intro */}
           <A11yIntro />
 
           <WhatIsDisability />
+
+          <DiversityOfDisability />
+          <DiversityOfDisability2 />
+
           <TypesOfDisability />
-          <DurationOfDisability />
+          <TypesOfDisability2 />
 
           <WhatIsA11y />
           <PartsOfA11y />
+          <PartsOfA11y2 />
 
+          {/* Business Needs */}
           <WhyBusiness1 />
           <WhyBusiness2 />
           <WhyBusiness3 />
@@ -109,6 +84,10 @@ export default class Presentation extends React.Component {
               Thank you
             </Heading>
           </Slide>
+
+          {/* About Me Slides */}
+          <AboutMe slideUrl={slideUrl} />
+          <Formidable />
         </Deck>
       </DeckWrapper>
     );

@@ -30,22 +30,25 @@ export default class TypesOfDisability extends React.Component {
 
         <Layout style={[styles.verticalAlignment]}>
           <Fill>
-            <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
-              Health conditions
+            <Text textColor="faded" style={[styles.averageText, styles.littleSpacePlease]}>
+              Permanent disabilities
             </Text>
-            <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
+            <Text textColor="faded" style={[styles.averageText, styles.littleSpacePlease]}>
               Temporary impairments
             </Text>
-            <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
+            <Text textColor="faded" style={[styles.averageText, styles.littleSpacePlease]}>
               Situational limitations
             </Text>
           </Fill>
           <Fill>
             <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
+              Age-related impairments
+            </Text>
+            <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
               Multiple disabilities
             </Text>
             <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
-              Age-related impairments
+              Health conditions
             </Text>
             <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
               Changing abilities

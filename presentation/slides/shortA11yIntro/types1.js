@@ -42,13 +42,13 @@ export default class TypesOfDisability extends React.Component {
           </Fill>
           <Fill>
             <Text textColor="primary" style={[styles.standardText, styles.littleSpacePlease]}>
-              Speech
+              &nbsp;
             </Text>
             <Text textColor="primary" style={[styles.standardText, styles.littleSpacePlease]}>
-              Cognitive
+              &nbsp;
             </Text>
             <Text textColor="primary" style={[styles.standardText, styles.littleSpacePlease]}>
-              Neurological
+              &nbsp;
             </Text>
           </Fill>
         </Layout>
