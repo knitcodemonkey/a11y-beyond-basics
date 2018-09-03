@@ -1,6 +1,6 @@
 import React from "react";
 import DeckWrapper from "./deck-wrapper";
-import { Deck, Fill, Heading, Layout, Link, Notes, Slide, Text } from "spectacle";
+import { Deck, Heading, Slide, Text } from "spectacle";
 import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
 import styles from "./slides/styles";
@@ -24,7 +24,7 @@ import { GettingStartedIntro, Axe, DesignTools, DevTools } from "./slides/gettin
 
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
 
-import { DocumentationQuote } from "./slides/documentation";
+import { DocumentationQuote, PastSelf } from "./slides/documentation";
 require("normalize.css");
 
 const slideUrl = "https://a11y-beyond-basics.surge.sh";
@@ -90,6 +90,7 @@ export default class Presentation extends React.Component {
           <DevTools />
 
           <DocumentationQuote />
+          <PastSelf />
 
           {/* Conclusion */}
           <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>
