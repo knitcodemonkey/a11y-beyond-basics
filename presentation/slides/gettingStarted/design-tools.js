@@ -2,25 +2,7 @@
 import React from "react";
 
 // Import Spectacle Core tags
-import {
-  Appear,
-  BlockQuote,
-  Cite,
-  Heading,
-  ListItem,
-  List,
-  Quote,
-  Slide,
-  Text,
-  Notes,
-  Layout,
-  Fill,
-  Link,
-  Image
-} from "spectacle";
-
-// Import theme
-import createTheme from "spectacle/lib/themes/default";
+import { Heading, Slide, Notes, Link } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";

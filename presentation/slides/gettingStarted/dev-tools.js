@@ -1,18 +1,9 @@
-// Import React
 import React from "react";
-
-// Import Spectacle Core tags
 import { Heading, Slide, Notes, Link } from "spectacle";
-
-// Import theme
-import createTheme from "spectacle/lib/themes/default";
-
-// Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
 import styles from "../styles";
 const images = {
-  wheelchair: require("../../../assets/backgrounds/access-wheelchair.jpg"),
-  JenniferVan: require("../../../assets/JenniferVan.jpg")
+  wheelchair: require("../../../assets/backgrounds/access-wheelchair.jpg")
 };
 preloader(images);
 

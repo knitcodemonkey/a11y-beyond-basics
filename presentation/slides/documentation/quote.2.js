@@ -8,7 +8,6 @@ import styles from "../styles";
 const images = {
   JenDevDesk: require("../../../assets/aboutme/JensDesk.jpg"),
   DamianConway: require("../../../assets/documentation/DamianConway.jpg"),
-  GoodQuestions: require("../../../assets/documentation/good-questions.jpg"),
   Library: require("../../../assets/documentation/library-at-trinity-college.jpg")
 };
 preloader(images);

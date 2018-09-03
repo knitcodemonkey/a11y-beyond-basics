@@ -1,13 +1,6 @@
 import React from "react";
 import { Heading, Slide, Text, Notes } from "spectacle";
-
-// Import image preloader util
-import preloader from "spectacle/lib/utils/preloader";
 import styles from "../styles";
-const images = {
-  accessibilityGif: require("../../../assets/AccessibilityGif.gif")
-};
-preloader(images);
 
 // Require CSS
 require("normalize.css");
