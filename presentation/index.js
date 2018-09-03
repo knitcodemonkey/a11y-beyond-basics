@@ -18,6 +18,8 @@ import {
   PartsOfA11y2
 } from "./slides/shortA11yIntro";
 
+import { Aria } from "./slides/intermediateA11y";
+
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
 require("normalize.css");
 
@@ -69,6 +71,8 @@ export default class Presentation extends React.Component {
           <WhatIsA11y />
           <PartsOfA11y />
           <PartsOfA11y2 />
+
+          <Aria />
 
           {/* Business Needs */}
           <WhyBusiness1 />
