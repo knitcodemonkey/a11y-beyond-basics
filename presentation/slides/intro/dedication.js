@@ -56,6 +56,19 @@ const Dedication = () => (
 
       <Fill style={styles.tinySpacePlease}>
         <Text textColor="primary" style={[styles.smallText, { display: "inline-block", marginRight: 10 }]}>
+          Erin Doyle
+        </Text>
+        <Link
+          textColor="links"
+          style={[styles.links, { display: "inline-block" }]}
+          href="https://www.reactathon.com/workshops"
+        >
+          Building Accessible Web Apps with React
+        </Link>
+      </Fill>
+
+      <Fill style={styles.tinySpacePlease}>
+        <Text textColor="primary" style={[styles.smallText, { display: "inline-block", marginRight: 10 }]}>
           Jen Luker -
         </Text>
         <Link

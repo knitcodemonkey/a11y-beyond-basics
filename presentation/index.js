@@ -1,9 +1,8 @@
 import React from "react";
 import DeckWrapper from "./deck-wrapper";
-import { Deck, Heading, Slide, Text } from "spectacle";
+import { Deck } from "spectacle";
 import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
-import styles from "./slides/styles";
 import { Cover, Dedication } from "./slides/intro";
 import { AboutMe, Formidable } from "./slides/aboutme";
 import {
@@ -25,7 +24,7 @@ import { GettingStartedIntro, Axe, DesignTools, DevTools } from "./slides/gettin
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
 
 import { DocQuote1, PastSelf, DevEvo1, DevEvo2, AccessibleExamples, DocQuote2 } from "./slides/documentation";
-import {A11yForYou, BeKind } from "./slides/conclusion";
+import { A11yForYou, BeKind } from "./slides/conclusion";
 require("normalize.css");
 
 const slideUrl = "https://a11y-beyond-basics.surge.sh";
@@ -54,7 +53,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <DeckWrapper
-        topContent={<span style={{ color: themeColors.faded }}>{slideUrl}</span>}
+        topContent={<span style={{ color: themeColors.quartenary }}>{slideUrl}</span>}
         bottomContent={<span style={{ color: themeColors.faded }}>@knitcodemonkey</span>}
       >
         <Deck theme={theme} progress="pacman">
@@ -103,7 +102,6 @@ export default class Presentation extends React.Component {
 
           <A11yForYou />
           <BeKind />
-
         </Deck>
       </DeckWrapper>
     );

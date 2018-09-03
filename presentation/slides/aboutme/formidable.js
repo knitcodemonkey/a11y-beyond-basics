@@ -33,8 +33,9 @@ export default class AboutMe extends React.Component {
         </Heading>
 
         <Text textColor="primary" style={[styles.spacePlease, styles.smallText]}>
-          Seattle and London-based engineering consultancy. Open source software organization, specializing in React.js,
-          React Native, GraphQL, Node.js, and the extended JavaScript ecosystem.
+          Seattle, Denver and London-based engineering consultancy.
+          <br /> Open source software organization, specializing in React.js, React Native, GraphQL, Node.js, and the
+          extended JavaScript ecosystem.
         </Text>
 
         <Layout
