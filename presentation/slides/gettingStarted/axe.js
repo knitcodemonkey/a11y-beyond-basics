@@ -46,6 +46,15 @@ export default class Axe extends React.Component {
         >
           aXe Firefox Extension
         </Link>
+
+        <Link
+          textColor="dktertiary"
+          style={[styles.largeText, styles.littleSpacePlease, { textAlign: "center", width: "100%", display: "block" }]}
+          href=""
+          target="_blank"
+        >
+          Lighthouse
+        </Link>
       </Slide>
     );
   }

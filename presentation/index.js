@@ -23,6 +23,8 @@ import { Aria } from "./slides/intermediateA11y";
 import { GettingStartedIntro, Axe, DesignTools, DevTools } from "./slides/gettingStarted";
 
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
+
+import { DocumentationQuote } from "./slides/documentation";
 require("normalize.css");
 
 const slideUrl = "https://a11y-beyond-basics.surge.sh";
@@ -86,6 +88,8 @@ export default class Presentation extends React.Component {
           <Axe />
           <DesignTools />
           <DevTools />
+
+          <DocumentationQuote />
 
           {/* Conclusion */}
           <Slide bgColor="#000000" style={{ width: "100%", position: "relative" }}>

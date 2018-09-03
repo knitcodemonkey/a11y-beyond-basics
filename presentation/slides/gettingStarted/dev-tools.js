@@ -2,22 +2,7 @@
 import React from "react";
 
 // Import Spectacle Core tags
-import {
-  Appear,
-  BlockQuote,
-  Cite,
-  Heading,
-  ListItem,
-  List,
-  Quote,
-  Slide,
-  Text,
-  Notes,
-  Layout,
-  Fill,
-  Link,
-  Image
-} from "spectacle";
+import { Heading, Slide, Notes, Link } from "spectacle";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
@@ -51,14 +36,6 @@ export default class OtherTools extends React.Component {
         <Link
           textColor="dktertiary"
           style={[styles.largeText, styles.littleSpacePlease, { textAlign: "center", width: "100%", display: "block" }]}
-          href="https://github.com/reactjs/react-a11y"
-        >
-          react-a11y
-        </Link>
-
-        <Link
-          textColor="dktertiary"
-          style={[styles.largeText, styles.littleSpacePlease, { textAlign: "center", width: "100%", display: "block" }]}
           href="https://www.npmjs.com/package/eslint-plugin-jsx-a11y"
         >
           eslint-plugin-jsx-a11y
@@ -69,7 +46,7 @@ export default class OtherTools extends React.Component {
           style={[styles.largeText, styles.littleSpacePlease, { textAlign: "center", width: "100%", display: "block" }]}
           href="https://www.youtube.com/watch?v=jC_7NnRdYb0"
         >
-          axe-core
+          axe-core for automated testing
         </Link>
       </Slide>
     );
