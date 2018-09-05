@@ -1,8 +1,10 @@
 import React from "react";
-import DeckWrapper from "./deck-wrapper";
-import { Deck } from "spectacle";
 import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
+
+import { Deck, Notes } from "spectacle";
+import DeckWrapper from "./deck-wrapper";
+
 import { Cover, Dedication } from "./slides/intro";
 import { AboutMe, Formidable } from "./slides/aboutme";
 import {
@@ -16,13 +18,8 @@ import {
   PartsOfA11y,
   PartsOfA11y2
 } from "./slides/shortA11yIntro";
-
-import { Aria } from "./slides/intermediateA11y";
-
-import { GettingStartedIntro, Axe, DesignTools, DevTools } from "./slides/gettingStarted";
-
+import { GettingStartedIntro, Axe, Lighthouse, DevTools } from "./slides/manualTesting";
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
-
 import { DocQuote1, PastSelf, DevEvo1, DevEvo2, AccessibleExamples, DocQuote2 } from "./slides/documentation";
 import { A11yForYou, BeKind } from "./slides/conclusion";
 require("normalize.css");
@@ -51,19 +48,42 @@ const theme = createTheme(themeColors, {
 
 export default class Presentation extends React.Component {
   render() {
+    const slideNotes = (
+      <Notes>
+        Accessibility in React has been a hot topic in the last few years, but in this talk, we'll be going beyond the
+        basics.
+        <ul>
+          <li>Intro, but more</li>
+          <li>We'll explore a data-driven perspective to convince the business to invest in accessibility</li>
+          <li>
+            Manual testing
+            <ul>
+              <li>We'll use lighthouse to audit applications</li>
+              <li>educate ourselves with the axe browser extensions</li>
+            </ul>
+          </li>
+          <li>
+            Automated testing
+            <ul>
+              <li>incorporate eslint-plugin-jsx-a11y into our lint process</li>
+              <li>add axe-core to our automated testing suite</li>
+            </ul>
+          </li>
+          <li>Documentation</li>
+        </ul>
+      </Notes>
+    );
     return (
       <DeckWrapper
         topContent={<span style={{ color: themeColors.quartenary }}>{slideUrl}</span>}
         bottomContent={<span style={{ color: themeColors.faded }}>@knitcodemonkey</span>}
       >
         <Deck theme={theme} progress="pacman">
-          <Cover slideUrl={slideUrl} />
+          <Cover slideUrl={slideUrl} slideNotes={slideNotes} />
 
           {/* About Me Slides */}
           <AboutMe slideUrl={slideUrl} />
           <Formidable />
-
-          <Dedication />
 
           {/* short a11y intro */}
           <A11yIntro />
@@ -80,8 +100,6 @@ export default class Presentation extends React.Component {
           <PartsOfA11y />
           <PartsOfA11y2 />
 
-          <Aria />
-
           {/* Business Needs */}
           <WhyBusiness1 />
           <WhyBusiness2 />
@@ -90,7 +108,8 @@ export default class Presentation extends React.Component {
           {/* How do we get started? */}
           <GettingStartedIntro />
           <Axe />
-          <DesignTools />
+          <Lighthouse />
+
           <DevTools />
 
           <DocQuote1 />
@@ -102,6 +121,8 @@ export default class Presentation extends React.Component {
 
           <A11yForYou />
           <BeKind />
+
+          <Dedication />
         </Deck>
       </DeckWrapper>
     );

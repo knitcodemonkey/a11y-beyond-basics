@@ -14,8 +14,9 @@ preloader(images);
 // Require CSS
 require("normalize.css");
 
-const Cover = ({ slideUrl }) => (
+const Cover = ({ slideUrl, slideNotes }) => (
   <Slide bgColor="faded" bgImage={images.JenDevDesk} bgDarken={0.7}>
+    {slideNotes}
     <Layout style={styles.flexCol}>
       <Fill style={styles.spacePlease}>
         <Heading caps size={1} textColor="primary" style={{ textShadow: "1px 1px 6px #111" }}>
@@ -38,6 +39,7 @@ const Cover = ({ slideUrl }) => (
 );
 
 Cover.propTypes = {
+  slideNotes: PropTypes.object,
   slideUrl: PropTypes.string
 };
 
