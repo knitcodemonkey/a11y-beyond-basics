@@ -19,6 +19,7 @@ import {
   PartsOfA11y2
 } from "./slides/shortA11yIntro";
 import { GettingStartedIntro, Axe, Lighthouse, DevTools } from "./slides/manualTesting";
+import { AutoIntro, EslintPlugin, Integrations } from "./slides/automatedTesting";
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
 import { DocQuote1, PastSelf, DevEvo1, DevEvo2, AccessibleExamples, DocQuote2 } from "./slides/documentation";
 import { A11yForYou, BeKind } from "./slides/conclusion";
@@ -105,12 +106,15 @@ export default class Presentation extends React.Component {
           <WhyBusiness2 />
           <WhyBusiness3 />
 
-          {/* How do we get started? */}
+          {/* Manual Testing */}
           <GettingStartedIntro />
           <Axe />
           <Lighthouse />
 
-          <DevTools />
+          {/* Automated Testing */}
+          <AutoIntro />
+          <EslintPlugin />
+          <Integrations />
 
           <DocQuote1 />
           <PastSelf />
