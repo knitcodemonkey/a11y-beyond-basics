@@ -1,0 +1,6 @@
+// .eslintrc
+{
+  "extends": [
+    "plugin:jsx-a11y/recommended"
+  ]
+}

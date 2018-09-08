@@ -1,0 +1,3 @@
+$ npm install eslint --save-dev
+$ npm install eslint-plugin-jsx-a11y --save-dev
+$ npm install husky --save-dev

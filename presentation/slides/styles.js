@@ -49,6 +49,12 @@ const Styles = {
     lineHeight: "2.4rem",
     textShadow: "1px 1px 4px #111"
   },
+  codeText: {
+    fontSize: "1.35rem",
+    lineHeight: "1.6rem",
+    textShadow: "1px 1px 4px #111",
+    minWidth: "0px"
+  },
   bulletLinks: {
     lineHeight: "1.6em",
     marginBottom: 4

@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Slide, Text, Notes } from "spectacle";
+import { Heading, Slide, Image, Notes } from "spectacle";
 import styles from "../styles";
 const images = {
   KathySierra: require("../../../assets/automation/make-the-right-things-easy.jpg"),

@@ -25,7 +25,7 @@ const DocumentationQuote = () => (
           component does.
         </p>
       </Notes>
-      <Layout style={{ marginTop: -80 }}>
+      <Layout>
         <Fill
           style={{
             flex: "1 1 38%",

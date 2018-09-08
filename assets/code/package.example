@@ -1,0 +1,11 @@
+// package.json
+{
+  "scripts": {
+    "lint": "eslint ./src",
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
+  },
+}
