@@ -18,7 +18,8 @@ import {
   PartsOfA11y,
   PartsOfA11y2
 } from "./slides/shortA11yIntro";
-import { GettingStartedIntro, Axe, Lighthouse, DevTools } from "./slides/manualTesting";
+import { DefinitionOfDone } from "./slides/gettingStarted";
+import { GettingStartedIntro, Axe, Lighthouse } from "./slides/manualTesting";
 import { AutoIntro, EslintPlugin, Integrations } from "./slides/automatedTesting";
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
 import { DocQuote1, PastSelf, DevEvo1, DevEvo2, AccessibleExamples, DocQuote2 } from "./slides/documentation";
@@ -101,6 +102,19 @@ export default class Presentation extends React.Component {
           <PartsOfA11y />
           <PartsOfA11y2 />
 
+          {/* Documentation */}
+          <DocQuote1 />
+          <PastSelf />
+          <DevEvo1 />
+          <DevEvo2 />
+          <AccessibleExamples />
+          <DocQuote1 />
+
+          <A11yForYou />
+
+          {/* How to get started */}
+          <DefinitionOfDone />
+
           {/* Business Needs */}
           <WhyBusiness1 />
           <WhyBusiness2 />
@@ -116,16 +130,8 @@ export default class Presentation extends React.Component {
           <EslintPlugin />
           <Integrations />
 
-          <DocQuote1 />
-          <PastSelf />
-          <DevEvo1 />
-          <DevEvo2 />
-          <AccessibleExamples />
-          <DocQuote2 />
-
-          <A11yForYou />
+          {/* Conclusion */}
           <BeKind />
-
           <Dedication />
         </Deck>
       </DeckWrapper>

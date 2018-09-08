@@ -9,7 +9,7 @@ const images = {
 preloader(images);
 
 const PastSelf = () => (
-  <Slide fit bgImage={images.Library} bgDarken={0.7}>
+  <Slide fit bgImage={images.Library} bgDarken={0.8}>
     <Notes />
     <Heading textColor="primary" style={{ lineHeight: "1.2em" }}>
       What if you wrote documentation for your past self?

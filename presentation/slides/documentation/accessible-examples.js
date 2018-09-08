@@ -9,7 +9,7 @@ const images = {
 preloader(images);
 
 const AccessibleExamples = () => (
-  <Slide fit bgImage={images.Library} bgDarken={0.7}>
+  <Slide fit bgImage={images.Library} bgDarken={0.8}>
     <Notes>
       <p>
         PYou wrote it and you can't remember all the details. You can't expect your users to intuitively know it. If you

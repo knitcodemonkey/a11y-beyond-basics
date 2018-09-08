@@ -50,6 +50,11 @@ export default class TypesOfDisability extends React.Component {
               Internationalization
             </Text>
           </Fill>
+          <Fill style={styles.verticalAlignment}>
+            <Text textColor="primary" style={[styles.averageText, styles.half, styles.littleSpacePlease]}>
+              Documentation
+            </Text>
+          </Fill>
         </Layout>
       </Slide>
     );

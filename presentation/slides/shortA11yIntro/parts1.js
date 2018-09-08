@@ -47,6 +47,11 @@ export default class TypesOfDisability extends React.Component {
               &nbsp;
             </Text>
           </Fill>
+          <Fill style={styles.horizontalAlignment}>
+            <Text textColor="primary" style={[styles.averageText, styles.littleSpacePlease]}>
+              &nbsp;
+            </Text>
+          </Fill>
         </Layout>
       </Slide>
     );

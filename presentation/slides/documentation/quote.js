@@ -16,7 +16,7 @@ preloader(images);
 require("normalize.css");
 
 const DocumentationQuote = () => (
-  <Slide fit bgImage={images.Library} bgDarken={0.7}>
+  <Slide fit bgImage={images.Library} bgDarken={0.8}>
     <Notes>
       <p>Damian Conway said, "Documentation is a love letter you write to your future self."</p>
       <p>

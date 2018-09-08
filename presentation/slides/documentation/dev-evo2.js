@@ -1,6 +1,6 @@
 // Import React
 import React from "react";
-import { Slide, Image, Layout, Link } from "spectacle";
+import { Slide, Image, Layout, Link, Fill } from "spectacle";
 import preloader from "spectacle/lib/utils/preloader";
 import styles from "../styles";
 require("normalize.css");
@@ -12,17 +12,21 @@ const images = {
 preloader(images);
 
 const DevEvo1 = () => (
-  <Slide fit bgImage={images.Library} bgDarken={0.7}>
+  <Slide fit bgImage={images.Library} bgDarken={0.8}>
     <Layout style={{ justifyContent: "space-between" }}>
-      <Link
-        style={styles.links}
-        href="https://www.reddit.com/r/orlybooks/comments/4htnwb/copy_paste_driven_development/"
-      >
-        <Image style={{ height: "80vh", width: "auto" }} src={images.CPDrivenDev} />
-      </Link>
-      <Link style={styles.links} href="https://effectivesoftwaredesign.com/2016/05/22/copy-and-paste-programming/">
-        <Image style={{ height: "80vh", width: "auto" }} src={images.CopyPaste} />
-      </Link>
+      <Fill style={styles.half}>
+        <Link
+          style={styles.links}
+          href="https://www.reddit.com/r/orlybooks/comments/4htnwb/copy_paste_driven_development/"
+        >
+          <Image style={{ height: "70vh", width: "auto" }} src={images.CPDrivenDev} />
+        </Link>
+      </Fill>
+      <Fill style={styles.half}>
+        <Link style={styles.links} href="https://effectivesoftwaredesign.com/2016/05/22/copy-and-paste-programming/">
+          <Image style={{ height: "70vh", width: "auto" }} src={images.CopyPaste} />
+        </Link>
+      </Fill>
     </Layout>
   </Slide>
 );

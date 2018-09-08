@@ -9,7 +9,7 @@ const images = {
 preloader(images);
 
 const DevEvo1 = () => (
-  <Slide fit bgImage={images.Library} bgDarken={0.7}>
+  <Slide fit bgImage={images.Library} bgDarken={0.8}>
     <Heading textColor="primary" style={{ lineHeight: "1.2em" }}>
       How most of us evolved as programmers:
     </Heading>
