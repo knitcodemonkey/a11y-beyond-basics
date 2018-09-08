@@ -18,7 +18,7 @@ import {
   PartsOfA11y,
   PartsOfA11y2
 } from "./slides/shortA11yIntro";
-import { DefinitionOfDone } from "./slides/gettingStarted";
+import { Greenfield, DefinitionOfDone } from "./slides/gettingStarted";
 import { GettingStartedIntro, Axe, Lighthouse } from "./slides/manualTesting";
 import { AutoIntro, EslintPlugin, Integrations } from "./slides/automatedTesting";
 import { WhyBusiness1, WhyBusiness2, WhyBusiness3 } from "./slides/businessConcerns";
@@ -109,11 +109,7 @@ export default class Presentation extends React.Component {
           <DevEvo2 />
           <AccessibleExamples />
           <DocQuote1 />
-
           <A11yForYou />
-
-          {/* How to get started */}
-          <DefinitionOfDone />
 
           {/* Business Needs */}
           <WhyBusiness1 />
@@ -129,6 +125,10 @@ export default class Presentation extends React.Component {
           <AutoIntro />
           <EslintPlugin />
           <Integrations />
+
+          {/* How to get started */}
+          <Greenfield />
+          <DefinitionOfDone />
 
           {/* Conclusion */}
           <BeKind />
